@@ -25,70 +25,78 @@
 	<body>
 		<h1> Google Analytics Development Page</h1>
 		<p> This page is dedicated to testing and developing Google Analytics App </p>
-
-		<h2>Set Up</h2>
-		<div>
+		<div style="width:50%; float:left">
+			<h2>Set Up</h2>
 			<div>
-				<label>Web Property ID</label>
-				<input name="pid" type="text" value="UA-51696694-1" />
+				<div>
+					<label>Web Property ID</label>
+					<input name="pid" type="text" value="UA-51696694-1" />
+				</div>
+				<div>
+					<label>User ID</label>
+					<input name="uid" type="text" value="metrx-123" />
+				</div>
 			</div>
+			<hr/>
+			<h2>Page Event</h2>
 			<div>
-				<label>User ID</label>
-				<input name="uid" type="text" value="metrx-123" />
+				<div>
+					<label>Category <small>(string)</small></label>
+					<input name="uid" type="text" value="metrx-123" />
+				</div>
+				<div>
+					<label>Action <small>(string)</small></label>
+					<input name="uid" type="text" value="metrx-123" />
+				</div>
+				<div>
+					<label>Label <small>(string)</small></label>
+					<input name="uid" type="text" value="metrx-123" />
+				</div>
+				<div>
+					<label>Value <small>(integer)</small></label>
+					<input name="uid" type="text" value="metrx-123" />
+				</div>
+				<div>
+					<button class="btn primary">Submit</button>
+				</div>
 			</div>
-		</div>
-		<hr/>
-		<h2>Page Event</h2>
-		<div>
-			<label>Category <small>(string)</small></label>
-			<input name="uid" type="text" value="metrx-123" />
-		</div>
-		<div>
-			<label>Action <small>(string)</small></label>
-			<input name="uid" type="text" value="metrx-123" />
-		</div>
-		<div>
-			<label>Label <small>(string)</small></label>
-			<input name="uid" type="text" value="metrx-123" />
-		</div>
-		<div>
-			<label>Value <small>(integer)</small></label>
-			<input name="uid" type="text" value="metrx-123" />
-		</div>
-		<div>
-			<button class="btn primary">Submit</button>
-		<hr/>
-		<h2>Ecommerce</h2>
-		<h3>Transaction</h3>
-		<div>
-			<label>Transaction ID <small>(string)</small></label>
-			<input name="uid" type="text" value="metrx-123" />
-		</div>
-		<div>
-			<label>Affiliation <small>(string)</small> The store or affiliation from which this transaction occurred (e.g. Acme Clothing).</label>
-			<input name="uid" type="text" value="metrx-123" />
-		</div>
-		<div>
-			<label>Shipping <small>(string)</small> The store or affiliation from which this transaction occurred (e.g. Acme Clothing).</label>
-			<input name="uid" type="text" value="metrx-123" />
-		</div>
-		<div>
-			<label> Tax<small>(string)</small> The store or affiliation from which this transaction occurred (e.g. Acme Clothing).</label>
-			<input name="uid" type="text" value="metrx-123" />
-		</div>
-
-		<h3>Items</h3>
-			<button class="btn primary">Add Product</button>
-			<table>
-				<tr>
-					<th>Transaction ID </th>
-					<th>Name </th>
-					<th>Sku </th>
-					<th>Category </th>
-					<th>Price </th>
-					<th>Quantity</th>
-				</tr>
+			<hr/>
+			<h2>Ecommerce</h2>
+			<div>
+				<h3>Transaction</h3>
+				<div>
+					<label>Transaction ID <small>(string)</small></label>
+					<input name="uid" type="text" value="metrx-123" />
+				</div>
+				<div>
+					<label>Affiliation <small>(string)</small></label>
+					<input name="uid" type="text" value="metrx-123" />
+				</div>
+				<div>
+					<label>Shipping <small>(string)</small> </label>
+					<input name="uid" type="text" value="metrx-123" />
+				</div>
+				<div>
+					<label> Tax<small>(string)</small> </label>
+					<input name="uid" type="text" value="metrx-123" />
+				</div>
+				<h3>Items</h3>
+				<button class="btn primary">Add Product</button>
+				<table width="100%">
+					<tr>
+						<th>Transaction ID </th>
+						<th>Name </th>
+						<th>Sku </th>
+						<th>Category </th>
+						<th>Price </th>
+						<th>Quantity</th>
+					</tr>
 				<table>
+			</div>
+		</div>
+		<div style="width:50%; float:left">
+			<h1>GRAPH GOES HERE</h1>
+		</div>
 
 	</body>
 </html>
