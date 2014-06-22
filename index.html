@@ -31,9 +31,17 @@
 			ga('create', 'UA-51696694-1', 'xertigo.com');
 			ga('send', 'pageview');
 
-
-
-
+			// EVENTS
+			$('#addItem').click(function(){
+				var tID = "123123123",
+					name = chance.sentence({words: 2}),
+					sku = chance.word({length: 5})+chance.natural({min: 111111, max: 999999}),
+					category = chance.shuffle(['electronics', 'clothing', 'food', 'home', 'decor'])[1],
+					price = chance.dollar({max: 1000}),
+					qty = chance.natural({min:1, max:10}),
+					new_item = "<tr><td>"+tID+"</td><td>"+name+"</td><td>"+sku+"</td><td>"+category+"</td><td>"+price+"</td><td>"+qty+"</td></tr>"
+					$('#items').append(new_item);
+			});
 
 			var execute = function(){
 				alert("kill me");
@@ -144,8 +152,8 @@
 					<input name="uid" type="text" value="metrx-123" />
 				</div>
 				<h3>Items</h3>
-				<button type="button" class="btn btn-primary">Add Product</button>
-				<table width="100%">
+				<button id="addItem" type="button" class="btn btn-primary">Add Product</button>
+				<table id="items" width="100%">
 					<tr>
 						<th>Transaction ID </th>
 						<th>Name </th>
